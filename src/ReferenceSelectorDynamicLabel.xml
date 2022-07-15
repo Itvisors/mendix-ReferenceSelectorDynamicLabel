@@ -8,9 +8,26 @@
     <icon/>
     <properties>
         <propertyGroup caption="General">
-            <property key="sampleText" type="string" required="false">
-                <caption>Default value</caption>
-                <description>Sample text input</description>
+            <systemProperty key="Label"/>
+            <systemProperty key="TabIndex"/>
+            <systemProperty key="Visibility"/>
+            <systemProperty key="Editability"/>
+            <property key="reference" type="association" selectableObjects="objectsDatasource" required="true">
+                <caption>Reference</caption>
+                <description>Reference</description>
+                <associationTypes>
+                    <associationType name="Reference"/>
+                </associationTypes>
+            </property>
+
+            <property key="objectsDatasource" type="datasource" isList="true" required="true">
+                <caption>Selectable objects</caption>
+                <description/>
+            </property>
+
+            <property key="label" type="textTemplate" required="true" dataSource="objectsDatasource">
+                <caption>Label</caption>
+                <description>Label to show in reference selector</description> 
             </property>
         </propertyGroup>
     </properties>
