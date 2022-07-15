@@ -1,4 +1,11 @@
 Test//
+Test/javascriptsource/
+Test/javasource/
+Test/deployment/
+Test/.classpath
+Test/.project
+Test/GPUCache/
+Test/theme/.sass-cache/
 .DS_Store
 .idea
 .vscode
@@ -8,8 +15,13 @@ node_modules
 *.log
 *.bak
 *.launch
+*.tmp
+*.lock
+.npmrc
 mxproject
 coverage
+.editorconfig
+
 
 **/results
 mendixProject
