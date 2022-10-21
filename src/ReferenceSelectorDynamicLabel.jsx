@@ -7,13 +7,6 @@ import "./ui/ReferenceSelectorDynamicLabel.css";
 
 export function ReferenceSelectorDynamicLabel(props) {
 
-    /* todo
-    plaatje
-    readme
-    refresh opties als in mendix veranderd
-    styling placeholder
-    demo project
-    */
     const validationFeedback = props.reference.validation;
     return (<div style={props.style}
         className={'mx-compound-control ' + (props.class ? props.class : '')}
