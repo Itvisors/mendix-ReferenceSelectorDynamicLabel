@@ -1,5 +1,5 @@
 ## ReferenceSelectorDynamicLabel
-A basic reference selector where the descirption can be set dynamically, using a text template
+A basic reference selector where the description can be set dynamically, using a text template
 
 ## Features
 - Set dynamic label for the options in a reference selector
