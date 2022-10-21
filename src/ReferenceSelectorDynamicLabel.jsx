@@ -24,7 +24,11 @@ export function ReferenceSelectorDynamicLabel(props) {
                 }
                 return <option value={index} selected = {isSelected}>{props.label.get(object).value}</option>
             });
-            return <select className={'form-control'}
+            let className = 'form-control';
+            if (props.reference.value === undefined) {
+                className += ' emptyOptionSelected'
+            }
+            return <select className={className}
                 onChange={(e) => onChange(e)}>
                 <option value= "placeholder"
                     className="emptyOption">

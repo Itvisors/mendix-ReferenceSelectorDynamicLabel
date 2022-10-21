@@ -4,3 +4,7 @@ Place your custom CSS here
 .emptyOption {
     font-style: italic;
 }
+
+.emptyOptionSelected {
+    font-style: italic;
+}
