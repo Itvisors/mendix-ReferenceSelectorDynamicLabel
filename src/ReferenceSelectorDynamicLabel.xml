@@ -14,7 +14,7 @@
             <systemProperty key="Editability"/>
             <property key="reference" type="association" selectableObjects="objectsDatasource" required="true">
                 <caption>Reference</caption>
-                <description>Reference</description>
+                <description/>
                 <associationTypes>
                     <associationType name="Reference"/>
                 </associationTypes>
@@ -28,6 +28,16 @@
             <property key="label" type="textTemplate" required="true" dataSource="objectsDatasource">
                 <caption>Label</caption>
                 <description>Label to show in reference selector</description> 
+            </property>
+
+            <property key="emptyCaption" type="textTemplate" required="false">
+                <caption>Empty option caption</caption>
+                <description/>
+            </property>
+
+            <property key="onChangeAction" type="action" required="false">
+                <caption>On change</caption>
+                <description/>
             </property>
         </propertyGroup>
     </properties>
