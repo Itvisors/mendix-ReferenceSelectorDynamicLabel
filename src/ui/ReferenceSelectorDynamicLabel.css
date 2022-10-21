@@ -2,12 +2,12 @@
 Place your custom CSS here
 */
 
-.emptyOptionSelected {
+.referenceSelectorDynamicLabel .emptyOptionSelected {
     font-style: italic;
 }
-.emptyOptionSelected option{
+.referenceSelectorDynamicLabel .emptyOptionSelected option{
     font-style: normal;
 }
-.emptyOption {
+.referenceSelectorDynamicLabel .emptyOption {
     font-style: italic;
 }
