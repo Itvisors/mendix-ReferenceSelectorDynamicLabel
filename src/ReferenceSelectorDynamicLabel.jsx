@@ -1,5 +1,7 @@
 import { createElement } from "react";
 
+import { Alert } from "./components/Alert";
+
 import "./ui/ReferenceSelectorDynamicLabel.css";
 
 export function ReferenceSelectorDynamicLabel(props) {
@@ -41,15 +43,17 @@ export function ReferenceSelectorDynamicLabel(props) {
         }
     }
     /* todo
-    validation
     plaatje
     readme
     refresh opties als in mendix veranderd
     styling placeholder
     demo project
     */
+    const validationFeedback = props.reference.validation;
     return (<div style={props.style}
-        className={'mx-compound-control ' + (props.class ? props.class : '')}
-        tabIndex={props.tabIndex}> {getDropdown()}</div>);
+                className={'mx-compound-control ' + (props.class ? props.class : '')}
+                tabIndex={props.tabIndex}> {getDropdown()}
+                <Alert>{validationFeedback}</Alert>
+            </div>);
 }
 
