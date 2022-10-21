@@ -1,7 +1,7 @@
 import { createElement } from "react";
 import classNames from "classnames";
 
-export function Dropdown({objectsDatasource, reference, label, emptyCaption, onChangeAction}) {
+export function Dropdown({ objectsDatasource, reference, label, emptyCaption, onChangeAction }) {
 
     const onChange = (e) => {
         let target = undefined;
@@ -24,11 +24,14 @@ export function Dropdown({objectsDatasource, reference, label, emptyCaption, onC
             }
             return <option value={index} selected={isSelected}>{label.get(object).value}</option>
         });
+        let disabled = reference.readOnly;
+
         let className = 'form-control';
         if (reference.value === undefined) {
             className += ' emptyOptionSelected'
         }
-        return <select className={className}
+        return <select disabled={disabled}
+            className={className}
             onChange={(e) => onChange(e)}>
             <option value="placeholder"
                 className="emptyOption">
