@@ -1,9 +1,9 @@
 import { createElement } from "react";
 import classNames from "classnames";
 
-export const Alert = ({ alertStyle, className, children, id }) =>
+export const Alert = ({ alertStyle, className, children }) =>
     children ? (
-        <div id={id} className={classNames(`alert alert-${alertStyle} mx-validation-message`, className)}>
+        <div className={classNames(`alert alert-${alertStyle} mx-validation-message`, className)}>
             {children}
         </div>
     ) : null;
