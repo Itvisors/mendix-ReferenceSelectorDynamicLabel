@@ -10,7 +10,7 @@ export function ReferenceSelectorDynamicLabel(props) {
     const validationFeedback = props.reference.validation;
     return (<div style={props.style}
         className={'mx-compound-control ' + (props.class ? props.class : '')}
-        tabIndex={props.tabIndex}>
+        data-focusindex={props.tabIndex}>
         <Dropdown
             objectsDatasource={props.objectsDatasource}
             reference={props.reference}
