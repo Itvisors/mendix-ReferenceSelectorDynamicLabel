@@ -6,7 +6,7 @@ A basic reference selector where the descirption can be set dynamically, using a
 - Style empty option label easily
 - Call microflow on change
 
-## Configuration
+## How to use
 - Place the widget within a context
 - Select the reference, selectable objects and what to show in the label for every option
 - If needed configure additional settings
